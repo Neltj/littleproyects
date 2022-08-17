@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    min-height: 600px;
+    padding: 80px 0;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-repeat: no-repeat;
+    background-color: #09203f;
+    display: flex;
+}
+
+.main {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.452), rgba(255, 255, 255, 0.303));
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 1em;
+    border-radius: 1em;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1em;
+    animation: animate 1.5s ease-in-out;
+
+}
+
+
+@keyframes animate {
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.main__figure {
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);;
+    overflow: hidden;
+    display: flex;
+    border-radius: 1em;
+
+}
+
+.main__img {
+    width: 80%;
+    margin: auto;
+    max-width: 60vw;
+}
+
+.main__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 3em .7em;
+    text-align: center;
+}
+
+.main__form {
+    display: grid;
+    justify-items: center;
+
+    gap: 1em;
+
+}
+
+.main__input {
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+
+.main__input--send {
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    color: white;
+    font-weight: 600;
+}
+
+.main__title {
+    font-size: 2rem;
+}
+
+.main__paragraph {
+    margin: .3em 0;
+}
+
+.main__social {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: max-content;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.main__link {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: .7em 1.5em;
+}
+
+.main__link:hover {
+    background-color: white;
+}
+.main__icon {
+    width: 30px;
+    height: 30px;
+}
