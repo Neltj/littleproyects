@@ -22,12 +22,12 @@ body {
     width: 90%;
     margin: auto;
     overflow: hidden;
-    padding: 1em;
+    padding: .3em;
     border-radius: 1em;
     display: grid;
     grid-auto-rows: max-content;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    gap: 1em;
+    gap: .6em;
     animation: animate 1.5s ease-in-out;
 
 }
